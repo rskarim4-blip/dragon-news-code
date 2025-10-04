@@ -9,9 +9,9 @@ const Qzone = () => {
         <div className='bg-base-200 py-3'>
             <h2 className='font-bold md-5'>QZone</h2>
             <div className='space-y-5'>
-                <img src={swimingImage} alt="" srcset="" />
-                <img src={classImage} alt="" srcset="" />
-                <img src={playImage} alt="" srcset="" />
+                <img src={swimingImage} alt="" />
+                <img src={classImage} alt="" />
+                <img src={playImage} alt="" />
             </div>
         </div>
     );
