@@ -1,6 +1,8 @@
 import { FaEye, FaStar, FaShareAlt, FaBookmark } from "react-icons/fa";
+import { Link } from "react-router";
 
 export default function NewsCard({ news }) {
+    const { id } = news;
     return (
         <div className="max-w-md mx-auto bg-white rounded-2xl shadow-md border hover:shadow-lg transition">
             {/* Header */}
@@ -46,9 +48,9 @@ export default function NewsCard({ news }) {
                     ? news.details.slice(0, 200) + "..."
                     : news.details}
                 {news.details.length > 200 && (
-                    <button className="text-red-500 ml-1 font-medium hover:underline">
+                    <Link to={`/news-details/${id}`} className="text-red-500 ml-1 font-medium hover:underline">
                         Read More
-                    </button>
+                    </Link>
                 )}
             </div>
 
